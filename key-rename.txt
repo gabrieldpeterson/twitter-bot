@@ -1,0 +1,6 @@
+delete this line, replace following lines and rename to key.txt
+api key
+api key secret
+access token
+secret token
+bearer token
