@@ -16,8 +16,9 @@ client = tweepy.Client(
     bearer_token, consumer_key, consumer_secret, access_token, access_token_secret
 )
 
-# api = tweepy.API(auth)
+# public_tweets = client.get_home_timeline()
+# for tweet in public_tweets.data:
+#     print(tweet.text)
 
-public_tweets = client.get_home_timeline()
-for tweet in public_tweets.data:
-    print(tweet.text)
+user = client.get_me()
+print(user.data.name)
