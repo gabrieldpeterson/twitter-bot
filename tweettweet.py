@@ -31,3 +31,9 @@ client = tweepy.Client(
 # for follower in client.get_users_followers(id=user.data.id).data:
 #     print(follower)
 #     client.follow_user(target_user_id=follower.id)
+
+# Search tweets
+query = 'python'
+tweets = client.search_recent_tweets(query=query, max_results=10)
+for tweet in tweets.data:
+    print(tweet.data)
